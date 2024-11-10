@@ -10,5 +10,4 @@ heroi = Heroi(nome, idade, tipo)
 
 print(f"O Herói de nome {heroi.nome}")
 print(f"Com a idade de {heroi.idade}")
-print(f"Do tipo {heroi.tipo}")
 heroi.atacar()
