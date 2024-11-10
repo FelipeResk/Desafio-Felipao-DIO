@@ -50,3 +50,16 @@ def determinar_rank(vitorias, derrotas):
     else:
         rank = "Radiante"
     return f"`{cores[rank]}{rank}{reset_cor}"
+
+def escolher_tipo():
+    tipos = ["Mago", "Guerreiro", "Ladino"]
+    print("Escolha um tipo de herói: ")
+    for i, tipo in enumerate(tipos, 1):
+        print(f"{i}. {tipo}")
+
+    escolha = int(input("Digite o número correspondente ao tipo desejado: \n"))
+    while escolha < 1 or escolha > len(tipos):
+        print("Escolha inválida. Escolha uma das opções apresentadas")
+        escolha = int(input("Digite o número correspondente ao tipo desejado: \n"))
+
+    return tipos[escolha - 1]
